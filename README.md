@@ -1,4 +1,5 @@
 # MicroFrontend
+微前端想要解決的，基本是前端頁面的複用、特別是不同框架下的前端頁面。
 
 ## SingleSPA
 
@@ -25,7 +26,10 @@ function handleRoute() {
 ```
 
 ### SingleSPA架構
-主要可以分為主wrapper和從page
+
+主要可以分為主wrapper和從page，直接用 single-spa的cli來初始化一個專案：一個主root、一個react 子app、一個vue 子app。
+
+
 
 
 ## IFrame
