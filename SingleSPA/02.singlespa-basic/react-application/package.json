@@ -1,5 +1,5 @@
 {
-  "name": "@demo-react/demo-react",
+  "name": "@demo/react-spa",
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",

@@ -34,7 +34,12 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js",
+        "singel-spa-vue":"https://cdn.jsdelivr.net/npm/single-spa-vue@3.0.0/dist/umd/single-spa-vue.min.js",
+        "vue":"https://cdn.jsdelivr.net/npm/vue@3.4.21/dist/vue.global.min.js",
+        "vue-router":"https://cdn.jsdelivr.net/npm/vue-router@4.3.0/dist/vue-router.global.min.js"
       }
     }
   </script>
@@ -48,7 +53,9 @@
     {
       "imports": {
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-        "@demo/root-config": "//localhost:9000/demo-root-config.js"
+        "@demo/root-config": "//localhost:9000/demo-root-config.js",
+        "@demo/react-spa": "http://localhost:3031/demo-react-spa.js",
+        "@demo/vue-spa": "http://localhost:3032/js/app.js"
       }
     }
   </script>
@@ -77,6 +84,6 @@
   <script>
     System.import('@demo/root-config');
   </script>
-  <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+ 
 </body>
 </html>

@@ -19,7 +19,17 @@
 
   <main>
     <route default>
-      <application name="@single-spa/welcome"></application>
+      <!-- <application name="@single-spa/welcome"></application> -->
+      <div><a href="/">Root</a></div>
+      <div><a href="/react-page">Go to React</a></div>
+      <div><a href="/vue-page">Go to Vue</a></div>
     </route>
+    <route path="react-page">
+      <application name="@demo/react-spa"></application>
+    </route>
+    <route path="vue-page">
+      <application name="@demo/vue-spa"></application>
+    </route>
+
   </main>
 </single-spa-router>
