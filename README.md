@@ -100,13 +100,28 @@ configureWebpack: {
 ### SingleSPA的數據傳遞（全局state）
 SingleSPA中的各個組件，要如何共享數據呢？由於 single-spa 本身是專注於微前端模塊加載和路由管理，不直接提供狀態管理。盡量就是把數據簡單放到 Browser storage如 localStorage、sesstionStorage、cookie等；不然就是要全局windows掛載數據、函數，或者customEvent。
 
-### SingleSPA parse
+### SingleSPA Parcels
 // TODO
 
+### 原有專案中接入Single-SPA
 
 
 ## IFrame
 
+### Desc
+
+### 數據傳遞
+
 ## WebComponent
+### Desc
+Web Component主要由三項技術組成：**Custom elements**、**Shadow DOM**、**HTML templates**
+- Custom elements：可以讓開發者定義自己的HTML標籤
+- Shadow DOM：為web組件提供封裝的樣式和隔離，
+- HTML templates：允許聲明式複用HTML（`<template>` 和 `<slot>`）
+
+基本上是以「組件」為單位，然後可以跳脫前端框架，撰寫原生組件。所以基本上是使用Web Component暴露出來的接口和生命週期，來自己撰寫原生組件。
+
+### MicroApp
+MicroApp就是基於 webcomponent 技術的微前端框架
 
 ## Webpack Federation
